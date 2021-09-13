@@ -9,14 +9,19 @@
 
 }
 
-body{
+body, html{
     margin: 0;
     padding: 0;
-    position: relative;
-    overflow: hidden;
+    /* position: relative;
+    overflow: hidden; */
+    height: 100%;
+    
+    background: url(./images/bg-pattern-top.svg) no-repeat,
+    url(./images/bg-pattern-bottom.svg) no-repeat, hsl(185, 75%, 39%);
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
-.top-image{
+/* .top-image{
     position: absolute;
     right: 30%;
     top: -125%;
@@ -29,12 +34,12 @@ body{
     right: -30%;
     
     overflow: hidden;
-}
+} */
 
 .container{
     display: flex;
     justify-content: center;
-    background-color: var(--dark-cyan);
+    /* background-color: var(--dark-cyan); */
     margin:0 auto;
     height: 100vh;
     align-items: center;
